@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:200,300,regular,500,600,700&display=swap);
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: local('HK Grotesk Medium'), local('HKGrotesk-Medium'),
+        url('../assets/fonts/HKGrotesk-Medium.woff2') format('woff2'),
+        url('../assets/fonts/HKGrotesk-Medium.woff') format('woff'),
+        url('../assets/fonts/HKGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: local('HK Grotesk Regular'), local('HKGrotesk-Regular'),
+        url('../assets/fonts/HKGrotesk-Regular.woff2') format('woff2'),
+        url('../assets/fonts/HKGrotesk-Regular.woff') format('woff'),
+        url('../assets/fonts/HKGrotesk-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HK Grotesk Legacy';
+    src: local('HK Grotesk Regular Legacy'), local('HKGrotesk-RegularLegacy'),
+        url('../assets/fonts/HKGrotesk-RegularLegacy.woff2') format('woff2'),
+        url('../assets/fonts/HKGrotesk-RegularLegacy.woff') format('woff'),
+        url('../assets/fonts/HKGrotesk-RegularLegacy.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HK Grotesk SemiBold Legacy';
+    src: local('HK Grotesk SemiBold Legacy'), local('HKGrotesk-SemiBoldLegacy'),
+        url('../assets/fonts/HKGrotesk-SemiBoldLegacy.woff2') format('woff2'),
+        url('../assets/fonts/HKGrotesk-SemiBoldLegacy.woff') format('woff'),
+        url('../assets/fonts/HKGrotesk-SemiBoldLegacy.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

@@ -1,0 +1,128 @@
+@import "fonts.scss";
+
+@use "sass:math";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  // outline: none;
+}
+a:focus,
+a:active {
+  // outline: none;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+body {
+  font-size: 25px;
+  font-family: "HK Grotesk";
+  font-weight: 400;
+  line-height: 140%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+input,
+button,
+textarea {
+  font-size: inherit;
+}
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+a {
+  color: inherit;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+.wrapper {
+  background-color: #fff;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  > main {
+    flex: 1 1 auto;
+  }
+  > * {
+    min-width: 0;
+  }
+}
+[class*="__container"] {
+  max-width: 1750px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+@media (max-width: 1279.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+  }
+}
+@media (max-width: 479.98px) {
+  [class*="__container"] {
+    max-width: none;
+  }
+}
+
+h1 {
+   font-family: HK Grotesk;
+   font-weight: 500;
+}
+
+h2 {
+   font-family: HK Grotesk Legacy;
+   font-weight: 600;
+}
+h3 {
+   font-family: Outfit;
+   font-weight: 400;
+}
+
+@import "header.scss";
