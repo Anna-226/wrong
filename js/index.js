@@ -1,5 +1,5 @@
 import '../styles/style.scss';
-import burgerAndSearch from './modules.js/burgerAndSearch';
+import burgerAndSearch from './modules/burgerAndSearch';
 
 window.addEventListener('DOMContentLoaded', () => {
    'use strict';

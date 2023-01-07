@@ -90,14 +90,14 @@ h6 {
   margin: 0px auto;
   padding: 0px 15px;
 }
-@media (max-width: 1279.98px) {
+/* @media (max-width: 1279.98px) {
   [class*="__container"] {
-    max-width: 750px;
+    max-width: none;
   }
 }
 @media (max-width: 991.98px) {
   [class*="__container"] {
-    max-width: 750px;
+    max-width: none;
   }
 }
 @media (max-width: 767.98px) {
@@ -109,7 +109,7 @@ h6 {
   [class*="__container"] {
     max-width: none;
   }
-}
+} */
 
 h1 {
    font-family: HK Grotesk;
@@ -125,4 +125,6 @@ h3 {
    font-weight: 400;
 }
 
+@import "common.scss";
 @import "header.scss";
+@import "main.scss";

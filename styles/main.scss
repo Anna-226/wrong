@@ -1,0 +1,266 @@
+.main-block {
+  margin-top: 210px;
+  background: url("../assets/img/main-bg.png") center / cover no-repeat;
+  min-height: 985px;
+  @media (max-width: 767.98px) {
+    margin-top: 155px;
+    min-height: 463px;
+  }
+
+  // .main-block__container
+
+  &__container {
+    padding-top: 222px;
+    padding-bottom: 300px;
+    @media (max-width: 767.98px) {
+      padding-top: 77px;
+      padding-bottom: 72px;
+    }
+  }
+
+  // .main-block__content
+
+  &__content {
+    max-width: 1099px;
+    @media (max-width: 1115px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  // .main-block__title
+
+  &__title {
+    font-family: "Outfit";
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 125.3%;
+    color: #ffffff;
+    margin-bottom: 18px;
+    @media (max-width: 767.98px) {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 130%;
+      margin-bottom: 40px;
+    }
+  }
+
+  // .main-block__description
+
+  &__description {
+    font-family: "HK Grotesk";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 168%;
+    color: #ffffff;
+    margin-bottom: 55px;
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  // .main-block__button
+
+  &__button {
+  }
+}
+.collections {
+  margin-top: 100px;
+  @media (max-width: 767.98px) {
+    margin-top: 70px;
+  }
+  @media (max-width: 479.98px) {
+    margin-top: 40px;
+  }
+
+  // .collections__container
+
+  &__container {
+  }
+
+  // .collections__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 26.63px;
+    column-gap: 24px;
+    @media (max-width: 1700px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 767.98px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .collections__item
+
+  &__item {
+  }
+}
+.item-collection {
+  position: relative;
+  height: 555px;
+
+  // .item-collection_big
+  &_big {
+    grid-column: 1/3;
+    @media (max-width: 767.98px) {
+      grid-column: 1/2;
+    }
+  }
+  @media (max-width: 479.98px) {
+    height: 380px;
+  }
+  // .item-collection__image
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // .item-collection__title
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px 15px;
+    background-color: #636a6a;
+    font-family: "Outfit";
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 128%;
+    text-align: center;
+    letter-spacing: 0.265em;
+    text-transform: uppercase;
+    color: #ffffff;
+    @media (max-width: 479.98px) {
+      font-size: 20px;
+      padding: 20px 15px;
+    }
+  }
+}
+.advantages {
+  margin-top: 100px;
+  @media (max-width: 767.98px) {
+    margin-top: 70px;
+  }
+  @media (max-width: 479.98px) {
+    margin-top: 40px;
+  }
+  // .advantages__container
+
+  &__container {
+    background-color: #3a5041;
+  }
+
+  // .advantages__block
+
+  &__block {
+    padding: 77px 35px;
+    display: grid;
+    grid-template-columns: 1fr 36% 1fr;
+    @media (max-width: 1700px) {
+      grid-template-columns: 1fr 30% 1fr;
+      padding: 77px 0;
+    }
+    @media (max-width: 767.98px) {
+      grid-template-columns: 1fr;
+      padding: 23px 53px;
+    }
+    @media (max-width: 479.98px) {
+      padding: 23px 30px;
+    }
+  }
+}
+.advantage-item {
+  text-align: center;
+  padding: 0 15px 30px;
+  &:not(:last-child) {
+    border-right: 1.79259px solid rgba(255, 255, 255, 0.3);
+  }
+  @media (max-width: 767.98px) {
+    padding: 36.37px 0px 36.37px;
+    &:not(:last-child) {
+      border-right: none;
+      border-bottom: 1.79259px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+  // .advantage-item__icon
+
+  &__icon {
+    height: 100px;
+    margin-bottom: 26.8px;
+    @media (max-width: 767.98px) {
+      height: 90.94px;
+      margin-bottom: 24.37px;
+    }
+    // .advantage-item__icon_guarantee
+
+    &_guarantee {
+      background: url(../assets/img/icons/guarantee.svg) center / contain
+        no-repeat;
+    }
+    // .advantage-item__icon_rust
+
+    &_rust {
+      background: url(../assets/img/icons/rust.svg) center / contain no-repeat;
+    }
+    // .advantage-item__icon_premium
+
+    &_premium {
+      background: url(../assets/img/icons/premium.svg) center / contain
+        no-repeat;
+    }
+  }
+
+  // .advantage-item__title
+
+  &__title {
+    font-family: "Outfit";
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 128%;
+    text-align: center;
+    letter-spacing: 0.265em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 17.36px;
+    @media (max-width: 767.98px) {
+      font-size: 24px;
+      margin-bottom: 14.89px;
+    }
+  }
+
+  // .advantage-item__description
+
+  &__description {
+    font-family: "HK Grotesk";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 132%;
+    text-align: center;
+    color: #ffffff;
+    @media (max-width: 767.98px) {
+      font-size: 22px;
+    }
+  }
+
+  // .advantage-item__item
+
+  &__item {
+  }
+}
+.advantage-ite {
+  // .advantage-ite__item
+
+  &__item {
+  }
+}
